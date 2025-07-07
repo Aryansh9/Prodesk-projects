@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="top-bar">
+<div class="emoji-switch" id="themeToggle">
+  <span class="sun">☼</span>
+  <div class="fake-switch">
+    <div class="dot"></div>
+  </div>
+  <span class="moon">☽</span>
+</div>
+</div>
+
+
+  <div class="container" id="home">
+ <div class="intro">
+  <h1>
+    <span class="welcome-text">Welcome to the</span><br>
+    <span class="quiz-title">Frontend Quiz!</span>
+  </h1>
+  <p>Pick a subject to get started.</p>
+</div>
+
+    <div class="topics">
+      <button class="topic-btn" onclick="loadQuiz('html')">&#x3C;/&#x3E; HTML</button>
+      <button class="topic-btn" onclick="loadQuiz('css')">🎨 CSS</button>
+      <button class="topic-btn" onclick="loadQuiz('js')">🔢 JavaScript</button>
+      <button class="topic-btn" onclick="loadQuiz('accessibility')">🦻 Accessibility</button>
+    </div>
+  </div>
+
+  <div class="quiz" id="quiz"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
